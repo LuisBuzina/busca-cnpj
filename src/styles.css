@@ -8,6 +8,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+main{
+  margin-top: 80px;
+}
 
 h2{
   font-family: 'Open Sans', sans-serif;

@@ -1,12 +1,41 @@
-
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
-  <img
-    width="40"
-    alt="Angular Logo"
-    src="/assets/icons/angular.svg"
-  />
-  <span><h2>Busca CNPJ</h2> </span>
+  <img width="40" alt="Angular Logo" src="/assets/icons/angular.svg" />
+  <span>
+    <h2>Busca CNPJ</h2>
+  </span>
 </div>
+
+<main>
+  <div class="p-grid p-d-flex">
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText>
+        <label for="inputtext">CNPJ</label>
+      </span>
+    </div>
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText>
+        <label for="inputtext">Razão Social</label>
+      </span>
+    </div>
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText>
+        <label for="inputtext">Nome Fantasia</label>
+      </span>
+    </div>
+    <div class="p-col-12 p-md-6 p-lg-3">
+      <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText>
+        <label for="inputtext">Municipio</label>
+      </span>
+    </div>
+
+  </div>
+</main>
+
+
 
 <router-outlet></router-outlet>
