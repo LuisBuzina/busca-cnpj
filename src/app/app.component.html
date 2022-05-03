@@ -8,34 +8,80 @@
 
 <main>
   <div class="p-grid p-d-flex">
-    <div class="p-col-12 p-md-6 p-lg-3">
+    
+      <div class="p-col-6">
+        <span class="p-float-label">
+          <input type="text" id="inputtext" pInputText>
+          <label for="inputtext">CNPJ</label>
+        </span>
+      </div>
+      <div class="p-col-6">
+        <p-button styleClass="buttonBuscar" label="Buscar" pTooltip="Busca de Cnpj"></p-button>
+      </div>
+    
+
+    <div class="p-col-12 p-md-6 p-lg-3 p-mt-3">
       <span class="p-float-label">
-        <input type="text" id="inputtext" pInputText>
-        <label for="inputtext">CNPJ</label>
-      </span>
-    </div>
-    <div class="p-col-12 p-md-6 p-lg-3">
-      <span class="p-float-label">
-        <input type="text" id="inputtext" pInputText>
+        <input type="text" id="inputtext" pInputText disabled="true">
         <label for="inputtext">Razão Social</label>
       </span>
     </div>
-    <div class="p-col-12 p-md-6 p-lg-3">
+    <div class="p-col-12 p-md-6 p-lg-3 p-mt-3">
       <span class="p-float-label">
-        <input type="text" id="inputtext" pInputText>
+        <input type="text" id="inputtext" pInputText disabled="true">
         <label for="inputtext">Nome Fantasia</label>
       </span>
     </div>
-    <div class="p-col-12 p-md-6 p-lg-3">
+    <div class="p-col-12 p-md-6 p-lg-3 p-mt-3">
       <span class="p-float-label">
-        <input type="text" id="inputtext" pInputText>
-        <label for="inputtext">Municipio</label>
+        <input type="text" id="inputtext" pInputText disabled="true">
+        <label for="inputtext">Cep</label>
+      </span>
+    </div>
+
+    <div class="p-col-12 p-md-6 p-lg-3 p-mt-3">
+      <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText disabled="true">
+        <label for="inputtext">Cidade</label>
+      </span>
+    </div>
+
+    <div class="p-col-12 p-md-6 p-lg-3 p-mt-3">
+      <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText disabled="true">
+        <label for="inputtext">Estado</label>
+      </span>
+    </div>
+
+    <div class="p-col-12 p-md-6 p-lg-3 p-mt-3">
+      <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText disabled="true">
+        <label for="inputtext">Logradoudo</label>
+      </span>
+    </div>
+
+    <div class="p-col-12 p-md-6 p-lg-3 p-mt-3">
+      <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText disabled="true">
+        <label for="inputtext">Bairro</label>
+      </span>
+    </div>
+
+    <div class="p-col-12 p-md-6 p-lg-3 p-mt-3">
+      <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText disabled="true">
+        <label for="inputtext">Número</label>
+      </span>
+    </div>
+
+    <div class="p-col-12 p-md-6 p-lg-3 p-mt-3">
+      <span class="p-float-label">
+        <input type="text" id="inputtext" pInputText disabled="true">
+        <label for="inputtext">Telefone</label>
       </span>
     </div>
 
   </div>
 </main>
-
-
 
 <router-outlet></router-outlet>

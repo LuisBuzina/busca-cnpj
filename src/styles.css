@@ -29,3 +29,21 @@ h2{
   color: white;
   font-weight: 600;
 }
+.p-inputtext {
+  margin: 0;
+  width: 100%;
+  border-radius: 1.25rem;
+}
+.p-button {
+  border-radius: 1.25rem;
+}
+.buttonBuscar {
+  width: 50%;
+}
+
+@media screen and (max-width: 40rem) {
+
+  .buttonBuscar {
+    width: 100%;
+  }
+ }
