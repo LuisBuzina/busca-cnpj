@@ -1,3 +1,4 @@
+import { Cnpj } from './../models/cnpj.model';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -10,11 +11,11 @@ export class CnpjService {
 
   constructor(private http: HttpClient) {
 
-    this.apiUrl = `https://brasilapi.com.br/api/cnpj/v1/19131243000197`;
+    this.apiUrl = `https://brasilapi.com.br/api/cnpj/v1`;
    }
 
-    obterDados(): Promise<any>{
-      return this.http.get(`${this.apiUrl}`)
+    obterDados(cnpj: any): Promise<any>{
+      return this.http.get(`${this.apiUrl}/${cnpj}`)
       .toPromise()
       .then( response => response);
     }

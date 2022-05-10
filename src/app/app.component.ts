@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Cnpj } from './core/models/cnpj.model';
+import { Component } from '@angular/core';
 import { CnpjService } from './core/service/cnpj.service';
 
 @Component({
@@ -7,23 +7,18 @@ import { CnpjService } from './core/service/cnpj.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit{
-  title = 'cnpj-busca';
+export class AppComponent {
+  title = 'Busca de CNPJ';
 
-  dados = [];
+  cnpj = new Cnpj();
+  valor: number;
 
 constructor(private cnpjService: CnpjService) { }
 
-ngOnInit() {
-
-  this.carregarDados();
-
-  }
 
   carregarDados(){
-    this.cnpjService.obterDados()
-    .then(dados => this.dados = dados );
-
-    console.log(this.dados);
+    this.cnpjService.obterDados(this.valor)
+    .then(obj => this.cnpj = obj)
+    console.log(this.cnpj);
   }
 }
